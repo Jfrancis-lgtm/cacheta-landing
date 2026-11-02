@@ -87,6 +87,13 @@ h1{font-size:clamp(46px,7vw,84px);line-height:.98;font-weight:900;margin:18px 0 
 .lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:540px}
 .lead b{color:var(--text)}
 
+.bonus{display:inline-flex;align-items:center;gap:12px;margin:0 0 16px;padding:10px 18px 10px 12px;border-radius:16px;
+  background:linear-gradient(135deg,rgba(255,205,50,.22),rgba(255,140,10,.12));border:1.5px solid rgba(255,205,50,.7);
+  box-shadow:0 0 30px rgba(255,190,40,.25);animation:pulse 2.4s ease-in-out infinite}
+.bonus .gift{font-size:30px;line-height:1}
+.bonus b{display:block;font-size:18px;font-weight:900;color:var(--gold-1)}
+.bonus small{display:block;font-size:13px;color:#ffe9b0}
+@keyframes pulse{0%,100%{box-shadow:0 0 18px rgba(255,190,40,.2)}50%{box-shadow:0 0 36px rgba(255,190,40,.5)}}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
 .chip{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
   padding:8px 13px;border-radius:12px;font-weight:700;font-size:15px}
@@ -192,7 +199,14 @@ footer .warn b{border:2px solid var(--red);color:#fff;background:var(--red);bord
 
 @media (max-width:900px){
   .hero{grid-template-columns:1fr;text-align:center;gap:34px;padding-top:10px}
-  .lead{margin:0 auto}.chips{justify-content:center}.cta{margin:0 auto}.trust{justify-content:center}
+  .lead{margin:0 auto}.bonus{display:inline-flex;align-items:center;gap:12px;margin:0 0 16px;padding:10px 18px 10px 12px;border-radius:16px;
+  background:linear-gradient(135deg,rgba(255,205,50,.22),rgba(255,140,10,.12));border:1.5px solid rgba(255,205,50,.7);
+  box-shadow:0 0 30px rgba(255,190,40,.25);animation:pulse 2.4s ease-in-out infinite}
+.bonus .gift{font-size:30px;line-height:1}
+.bonus b{display:block;font-size:18px;font-weight:900;color:var(--gold-1)}
+.bonus small{display:block;font-size:13px;color:#ffe9b0}
+@keyframes pulse{0%,100%{box-shadow:0 0 18px rgba(255,190,40,.2)}50%{box-shadow:0 0 36px rgba(255,190,40,.5)}}
+.chips{justify-content:center}.cta{margin:0 auto}.trust{justify-content:center}
   .games .card{flex-basis:calc((100% - 36px)/4)}
   .features,.steps{grid-template-columns:1fr}
   .cert{grid-template-columns:1fr;text-align:center}.cert img{margin:0 auto;width:230px}
@@ -226,7 +240,8 @@ footer .warn b{border:2px solid var(--red);color:#fff;background:var(--red);bord
     <div>
       <span class="eyebrow"><i></i> Saque via PIX · Certificado Gaming Labs</span>
       <h1><span class="gold">VOCÊ<br>GOSTA?</span></h1>
-      <p class="lead"><b>7 jogos de cartas num só app.</b> Mesas com jogadores reais, disputa limpa e saque direto no seu PIX.</p>
+      <div class="bonus"><span class="gift">🎁</span><span><b>Bônus de boas-vindas</b><small>Baixe o app e ganhe o seu ao entrar</small></span></div>
+      <p class="lead"><b>Baixe agora o app mais badalado do Brasil</b> e jogue Cacheta, Poker, Truco e mais 4 jogos, com disputa limpa e saque direto no seu PIX.</p>
       <div class="chips">
         <span class="chip"><span class="s b">♠</span>Cacheta</span><span class="chip"><span class="s r">♥</span>Poker</span>
         <span class="chip"><span class="s b">♣</span>Truco</span><span class="chip"><span class="s r">♦</span>Tranca</span>
@@ -315,7 +330,7 @@ footer .warn b{border:2px solid var(--red);color:#fff;background:var(--red);bord
     <div class="title reveal"><h2>Comece em <span class="gold">3 passos</span></h2></div>
     <div class="steps">
       <div class="step reveal"><h4>Baixe o app</h4><p>Toque no botão do seu celular, Android ou iPhone. É grátis.</p></div>
-      <div class="step reveal"><h4>Crie sua conta</h4><p>Cadastro rápido, em menos de 1 minuto.</p></div>
+      <div class="step reveal"><h4>Receba seu bônus</h4><p>Entre no app e ganhe seu bônus de boas-vindas. Cadastro em menos de 1 minuto.</p></div>
       <div class="step reveal"><h4>Escolha sua mesa</h4><p>Cacheta, Poker, Truco… escolha o jogo e sente na mesa.</p></div>
     </div>
   </div>
@@ -326,7 +341,7 @@ footer .warn b{border:2px solid var(--red);color:#fff;background:var(--red);bord
   <div class="wrap">
     <div class="final reveal">
       <h2><span class="gold">O queridinho<br>do Brasil</span> te espera</h2>
-      <p>Baixe agora e jogue com quem entende de cartas.</p>
+      <p>Baixe agora, receba seu <b style="color:var(--gold-2)">bônus de boas-vindas</b> e sente na mesa em menos de 1 minuto.</p>
       <div class="cta" data-cta>
         <a class="btn primary" href="#" data-store="android">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.38.38 0 00-.66-.38l-1.86 3.22A11.4 11.4 0 0012 8.1c-1.8 0-3.5.38-4.92 1.04L5.22 5.92a.38.38 0 00-.66.38L6.4 9.48A10.8 10.8 0 001 18h22a10.8 10.8 0 00-5.4-8.52zM7 15.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zm10 0a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"/></svg>
@@ -346,6 +361,7 @@ footer .warn b{border:2px solid var(--red);color:#fff;background:var(--red);bord
   <div class="wrap faq">
     <div class="title reveal"><h2>Dúvidas <span class="gold">frequentes</span></h2></div>
     <details><summary>O app é grátis?</summary><p>Sim. O download e o cadastro são gratuitos. Você só coloca saldo se quiser jogar mesas valendo.</p></details>
+    <details><summary>Tem bônus de boas-vindas?</summary><p>Sim. Quem baixa o app ganha um bônus de boas-vindas ao entrar. As condições ficam descritas dentro do app.</p></details>
     <details><summary>Como faço para sacar?</summary><p>Os saques são feitos via PIX direto para a sua conta, pelo próprio app.</p></details>
     <details><summary>Os jogos são justos?</summary><p>Sim. O app tem certificação da Gaming Labs (GLI) para o gerador de números aleatórios, que garante que a distribuição das cartas é aleatória.</p></details>
     <details><summary>Funciona no meu celular?</summary><p>Funciona em Android e iPhone. Toque no botão do seu aparelho para ir direto para a loja.</p></details>
@@ -362,7 +378,7 @@ footer .warn b{border:2px solid var(--red);color:#fff;background:var(--red);bord
 
 <!-- sticky mobile CTA -->
 <div class="sticky" id="sticky">
-  <a class="btn primary" href="#" data-store="auto"><span class="t" id="stickyLabel">BAIXAR AGORA – É GRÁTIS</span></a>
+  <a class="btn primary" href="#" data-store="auto"><span class="t" id="stickyLabel">🎁 BAIXE AGORA E GANHE SEU BÔNUS</span></a>
 </div>
 
 <script>
@@ -379,7 +395,7 @@ footer .warn b{border:2px solid var(--red);color:#fff;background:var(--red);bord
       box.insertBefore(i, a);
     });
   }
-  document.getElementById('stickyLabel').textContent = isIOS ? "BAIXAR PARA IPHONE – É GRÁTIS" : isAndroid ? "BAIXAR PARA ANDROID – É GRÁTIS" : "BAIXAR AGORA – É GRÁTIS";
+  document.getElementById('stickyLabel').textContent = isIOS ? "🎁 BAIXE AGORA E GANHE SEU BÔNUS" : isAndroid ? "🎁 BAIXE AGORA E GANHE SEU BÔNUS" : "🎁 BAIXE AGORA E GANHE SEU BÔNUS";
 
   function go(store){
     var s = store === "auto" ? (isIOS ? "ios" : "android") : store;
